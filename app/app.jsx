@@ -3,7 +3,7 @@ var ReactDOM = require('react-dom');
 var {Route, Router, IndexRoute, hashHistory} = require('react-router');
 
 // using object destructuring above, accomplishes the same as this:
-// var Route = require('react-router').Route;
+var Route = require('react-router').Route;
 
 var Main = require('Main');
 var Timer = require('Timer');

@@ -3,6 +3,7 @@ var Clock = require('Clock');
 var CountdownForm = require('CountdownForm');
 var Controls = require('Controls');
 
+
 var Countdown = React.createClass({
   getInitialState: function () {
     return {
@@ -28,9 +29,9 @@ var Countdown = React.createClass({
     }
   },
   componentWillUnmount: function () {
-    clearinterval(this.timer);
+    clearInterval(this.timer);
     this.timer = undefined;
-  },
+  },   
   startTimer: function () {   
 
     this.timer = setInterval(() => {
@@ -71,6 +72,6 @@ var Countdown = React.createClass({
       </div>
     );
   }
-});
+}); 
 
 module.exports = Countdown;
